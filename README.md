@@ -1,1 +1,1 @@
-# GTCo-Website
+# Gilded Graphics Website

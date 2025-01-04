@@ -682,15 +682,26 @@ footer .copywrite p {
   opacity: 1; /* Show the hover image on hover */
 }
 
+.product-name,
+.product-price {
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  width: 100%; /* Ensure both take full width */
+  text-align: left;
+}
+
 .product-name {
   font-size: 1.2rem;
-  margin: 10px 0;
+  margin-bottom: 5px; /* Add some space below the name */
 }
 
 .product-price {
   font-size: 1rem;
   color: #333;
+  margin-top: 0; /* Ensure no extra space above the price */
+  font-weight: lighter; /* Makes the price lighter in weight */
 }
+
 
 /* Icon styles */
 .product-image {

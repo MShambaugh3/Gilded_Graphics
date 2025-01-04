@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="icon" href="images/gg.favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Add Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Update Bar -->
+  <header>
+    <div class="update-bar">
+        <p>Check out our latest updates!</p>
+        <!-- Use the same close icon image from the slide menu -->
+        <span class="close-btn">
+          <img src="images/get-out.png" alt="Close Update Bar" class="close-icon">
+        </span>
+    </div>
+  </header>
+  
+  <!-- Header -->
+  <header class="navigation">
+    <div class="container">
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Collections</a></li>
+          <li><a href="customs.html">Customs</a></li>
+          <li><a href="favorites.html"><img src="images/love-it.png" alt="Favorites" class="love-it-img"></a></li>
+          <li><a href="cart.html"><img src="images/shopping-bag.png" alt="Shopping Cart" class="shopping-cart-img"></a></li>
+        </ul>
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <img src="images/burger-menu.png" alt="Menu" class="burger-icon">
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Slide-Out Menu -->
+  <div class="slide-menu">
+    <div class="close-menu" onclick="toggleMenu()">
+      <img src="images/get-out.png" alt="Close Menu" class="close-icon">
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Collections</a></li>
+      <li><a href="customs.html">Customs</a></li>
+      <li><a href="favorites.html">Favorites</a></li>
+      <li><a href="cart.html"><img src="images/shopping-bag.png" alt="Shopping Cart" class="shopping-cart-img"></a></li>
+    </ul>
+  </div>
+
+<!-- Main Content -->
+<main>
+    <section class="container">
+      <h1>Shop Gilded Graphics</h1>
+      <p>Contact Us</p>
+      <h4>gildedgraphicz@gmail.com</h4>
+      <h4>@Gilded_graphicz</h4>
+      <h4>619 573 2610</h4>
+    </section>
+
+    
+        <!-- American Made Image Section -->
+        <div class="american-made">
+            <img src="images/american-made.png" alt="American Made" class="american-made-img">
+        </div>
+
+    <!-- Carousel Section -->
+    <div class="carousel-container">
+        <!-- Static Image -->
+        <img src="images/img-car-static.png" alt="Static Arches" class="static-image">
+    
+        <!-- Rotating Images -->
+        <div class="carousel-track">
+        <img src="images/img-car-1.png" alt="Carousel Image 1" class="carousel-img">
+        <img src="images/img-car-2.png" alt="Carousel Image 2" class="carousel-img">
+        <img src="images/img-car-3.png" alt="Carousel Image 3" class="carousel-img">
+        <img src="images/img-car-4.png" alt="Carousel Image 4" class="carousel-img">
+        <img src="images/img-car-5.png" alt="Carousel Image 5" class="carousel-img">
+        </div>
+
+        <!-- Rotating Images Repeat -->
+        <div class="carousel-track">
+            <img src="images/img-car-1.png" alt="Carousel Image 1" class="carousel-img">
+            <img src="images/img-car-2.png" alt="Carousel Image 2" class="carousel-img">
+            <img src="images/img-car-3.png" alt="Carousel Image 3" class="carousel-img">
+            <img src="images/img-car-4.png" alt="Carousel Image 4" class="carousel-img">
+            <img src="images/img-car-5.png" alt="Carousel Image 5" class="carousel-img">
+        </div>
+    </div>
+   
+      
+  </main>  
+
+  <!-- Newsletter Section -->
+  <section id="newsletter">
+    <div class="sign-up">
+      <h4>Sign Up For Newsletter</h4>
+      <p>Get Email updates, News, and the latest <span>UPDATES</span></p>
+    </div>
+    <form id="newsletter-form">
+      <div class="form">
+        <input type="email" name="email" placeholder="Stay Connected!" required>
+        <button type="submit" class="normal">Sign up</button>
+      </div>
+    </form>
+  </section>
+  
+
+  <!-- Footer Section -->
+  <section id="footer">
+    <footer>
+      <div class="footer-content">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Moapa Valley, NV 89040</p>
+            <p><strong>Phone:</strong> 6195732610</p>
+            <p><strong>Hours:</strong> 08:00 - 18:00, Mon - Fri</p>
+            <div class="follow">
+              <h4>Follow Us</h4>
+              <div class="icon">
+                <p>@Gilded_graphicz</p> <!-- Use <p> instead of <h7> -->
+                <a href="https://www.instagram.com/gilded_graphicz/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <h4>About</h4>
+            <a href="about.html">Delivery Information</a>
+            <a href="about.html">Privacy Policy</a>
+            <a href="about.html">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>				
+          </div>
+          
+        <div class="col">
+          <h4>My Orders</h4>
+          <a href="cart.html">View Cart</a>
+          <a href="#">Track My Order</a>
+          <a href="contact.html">Help</a>	
+        </div>
+      </div>
+
+
+      <div class="copywrite">
+        <img src="images/gg.favicon.png" alt="Christ Sun" class="footer-image">
+        <p>&copy; 2023 - 25, Gilded Graphics</p>
+      </div>
+    </footer>
+  </section>
+
+  <script src="js/script.js"></script>
+
+  <script>
+    function toggleLike(element) {
+      const isLiked = element.src.includes('like-it');
+      element.src = isLiked ? 'images/love-it.png' : 'images/like-it.png';
+    }
+
+    function toggleCart(element) {
+      const isInCart = element.src.includes('shopping-bag-empty');
+      element.src = isInCart ? 'images/shopping-bag-full.png' : 'images/shopping-bag-empty.png';
+    }
+  </script>
+
+<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="YzUzOGFjNmUtMzU4Ny00NzlkLWFhMzQtNDQ1ZDJjN2Q0MjBhNjM4NjM5NTc1MzQyNTY2ODAx"></script>
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.css" />
+
+</body>
+</html>

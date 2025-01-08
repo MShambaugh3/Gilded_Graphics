@@ -39,7 +39,6 @@ document.addEventListener('click', function (e) {
       }
     }
 });
-
 // Close the update bar when the "X" is clicked
 document.querySelector('.update-bar .close-btn').addEventListener('click', function() {
     const updateBar = document.querySelector('.update-bar');
@@ -88,6 +87,42 @@ document.querySelector('#newsletter-form').addEventListener('submit', function(e
     });
 });
 
+// Function to toggle favorite status
+function toggleLike(element, productId) {
+    let favorites = JSON.parse(localStorage.getItem('favorites')) || []; // Get current favorites or empty array
+    const product = {
+      id: productId,
+      name: element.closest('.product-item').querySelector('.product-title').innerText,
+      price: element.closest('.product-item').querySelector('.product-price').innerText,
+      image: element.closest('.product-item').querySelector('.default-img').src
+    };
+
+    // Log to check if the correct data is captured
+    console.log('Toggled Product:', product);
+
+    // Check if the product is already in the favorites
+    const index = favorites.findIndex(item => item.id === productId);
+
+    if (index === -1) {
+      // If not, add to favorites
+      favorites.push(product);
+      element.src = 'images/love-it.png'; // Change heart icon to "liked"
+    } else {
+      // If already in favorites, remove from favorites
+      favorites.splice(index, 1);
+      element.src = 'images/like-it.png'; // Change heart icon to "unliked"
+    }
+
+    // Save the updated favorites list to localStorage
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+
+    // Log to see the updated favorites list in localStorage
+    console.log('Updated Favorites in localStorage:', JSON.parse(localStorage.getItem('favorites')));
+}
+
+
+
+// Auto-rotate carousel every 3 seconds
 const carouselTrack = document.querySelector('.carousel-track'); // Select the carousel track
 const images = document.querySelectorAll('.carousel-img'); // Select all carousel images
 const imageCount = images.length; // Get the number of images
@@ -101,38 +136,3 @@ function moveCarousel() {
 
 // Auto-rotate every 3 seconds
 setInterval(moveCarousel, 3000);
-
-
-// Function to toggle favorite status
-function toggleLike(element, productId) {
-    let favorites = JSON.parse(localStorage.getItem('favorites')) || []; // Get current favorites or empty array
-    const product = {
-      id: productId,
-      name: element.closest('.product-item').querySelector('.product-title').innerText,
-      price: element.closest('.product-item').querySelector('.product-price').innerText,
-      image: element.closest('.product-item').querySelector('.default-img').src
-    };
-  
-    // Log to check if the correct data is captured
-    console.log('Toggled Product:', product);
-  
-    // Check if the product is already in the favorites
-    const index = favorites.findIndex(item => item.id === productId);
-  
-    if (index === -1) {
-      // If not, add to favorites
-      favorites.push(product);
-      element.src = 'images/love-it.png'; // Change heart icon to "liked"
-    } else {
-      // If already in favorites, remove from favorites
-      favorites.splice(index, 1);
-      element.src = 'images/like-it.png'; // Change heart icon to "unliked"
-    }
-  
-    // Save the updated favorites list to localStorage
-    localStorage.setItem('favorites', JSON.stringify(favorites));
-  
-    // Log to see the updated favorites list in localStorage
-    console.log('Updated Favorites in localStorage:', JSON.parse(localStorage.getItem('favorites')));
-  }
-  

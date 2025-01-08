@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop</title>
-  <link rel="icon" href="images/gg.favicon.png">
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- Add Font Awesome CDN for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilded Graphics</title>
+    <link rel="icon" href="images/gg.favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Add Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Gilded Graphics - Custom Apparel, Stickers & More!">
+    <meta property="og:url" content="https://gildedthronco.com">
+    <meta property="og:title" content="Gilded Graphics">
+    <meta property="og:description" content="Discover unique designs at Gilded Graphics">
+    <meta property="og:image" content="images/gg.favicon.png">
+    <link rel="canonical" href="https://gildedthronco.com">
+
+    <!-- Snipcart -->
+    <!-- Snipcart JS and CSS -->
+    <link href="https://cdn.snipcart.com/themes/v3.0.0/default/snipcart.css" rel="stylesheet" />
+    <script src="https://cdn.snipcart.com/themes/v3.0.0/default/snipcart.js"></script>
+
+  </head>
+
+  
 <body>
 
   <!-- Update Bar -->
@@ -58,153 +74,88 @@
 <!-- Main Content -->
 <main>
     <section class="container">
-      <h1>Shop Gilded Graphics</h1>
-      <p>EAT - SLEEP - PRINT - REPEAT</p>
-    </section>
+        <h1>Shop Gilded Graphics</h1>
+        <p>EAT - SLEEP - PRINT - REPEAT</p>
+      </section>
+  
+      <!-- New Grid Section: Men's, Women's, Spring -->
+      <div class="grid-section">
+  
+          <!-- Women's -->
+          <div class="grid-item">
+              <div class="womens-img-container">
+                  <img src="images/womens-collection.png" alt="Women's Collection" class="womens-img">
+                  <a href="womens.html" class="womens-button">Women's</a>
+              </div>
+          </div>     
+             
+          <!-- Spring -->
+          <div class="grid-item">
+              <div class="spring-img-container">
+                  <img src="images/spring-collection.png" alt="Spring Collection" class="spring-img">
+                  <a href="spring.html" class="spring-button">Spring</a>
+              </div>
+          </div>
+  
+          <!-- Men's -->
+          <div class="grid-item">
+          <div class="mens-img-container">
+              <img src="images/mens-collection.png" alt="Men's Collection" class="mens-img">
+              <a href="mens.html" class="mens-button">Men's</a>
+          </div>
+          </div>
+          
+      </div>
 
-    <!-- New Grid Section: Men's, Women's, Spring -->
-    <div class="grid-section">
-
-        <!-- Women's -->
-        <div class="grid-item">
-            <div class="womens-img-container">
-                <img src="images/womens-collection.png" alt="Women's Collection" class="womens-img">
-                <a href="womens.html" class="womens-button">Women's</a>
-            </div>
-        </div>     
-           
-        <!-- Spring -->
-        <div class="grid-item">
-            <div class="spring-img-container">
-                <img src="images/spring-collection.png" alt="Spring Collection" class="spring-img">
-                <a href="spring.html" class="spring-button">Spring</a>
-            </div>
-        </div>
-
-        <!-- Men's -->
-        <div class="grid-item">
-        <div class="mens-img-container">
-            <img src="images/mens-collection.png" alt="Men's Collection" class="mens-img">
-            <a href="mens.html" class="mens-button">Men's</a>
-        </div>
-        </div>
         
-    </div>
-      
   
     <!-- Product Block Section -->
     <section id="product-block">
       <div class="product-grid">
 
- 
-        <!-- Product Item 1 -->
-        <div class="product-item">
-          <div class="product-image">
-            <!-- Default image -->
-            <img src="images/mock-1.jpg" alt="Product 1" class="product-img default-img" />
-            <!-- Hover image -->
-            <img src="images/mock-2.jpg" alt="Product 1 Hover" class="product-img hover-img" />
-  
-            <div class="like-icon">
-              <img src="images/like-it.png" alt="Like" class="heart-icon" onclick="toggleLike(this)">
+          <!-- Product Item 1 test block -->
+          <div class="product-item">
+            <div class="product-image">
+              <!-- Default image -->
+              <img src="images/mock-1.jpg" alt="Product 1" class="product-img default-img" />
+              <!-- Hover image -->
+              <img src="images/mock-2.jpg" alt="Product 1 Hover" class="product-img hover-img" />
+          
+              <!-- Like Icon -->
+              <div class="like-icon">
+                <img src="images/like-it.png" alt="Like" class="heart-icon" onclick="toggleLike(this)">
+              </div>
+          
+              <!-- Cart Icon with Snipcart Integration -->
+              <div class="cart-icon">
+                <img 
+                  src="images/shopping-bag-empty.png" 
+                  alt="Add to Cart" 
+                  class="cart-img snipcart-add-item" 
+                  data-item-id="product-id-1"
+                  data-item-price="19.99"
+
+                  data-item-description="A comfortable cotton T-shirt"
+                  data-item-image="images/mock-1.jpg"
+                  data-item-name="Mock One"
+                  onclick="toggleCart(this)">
+              </div>
             </div>
-            <div class="cart-icon">
-              <img src="images/shopping-bag-empty.png" alt="Add to Cart" class="cart-img" onclick="toggleCart(this)">
-            </div>
-          </div>
-          <div class="product-info">
-            <h3 class="product-title">Mock One</h3>
-            <p class="product-price">$19.99</p>
-          </div>
-        </div>
-  
-        <!-- Product Item 2 -->
-        <div class="product-item">
-          <div class="product-image">
-            <!-- Default image -->
-            <img src="images/hell-yeah-1.jpg" alt="Product 2" class="product-img default-img" />
-            <!-- Hover image -->
-            <img src="images/hell-yeah-2.jpg" alt="Product 2 Hover" class="product-img hover-img" />
-  
-            <div class="like-icon">
-              <img src="images/like-it.png" alt="Like" class="heart-icon" onclick="toggleLike(this)">
-            </div>
-            <div class="cart-icon">
-              <img src="images/shopping-bag-empty.png" alt="Add to Cart" class="cart-img" onclick="toggleCart(this)">
+            <div class="product-info">
+              <h3 class="product-title">Mock One</h3>
+              <p class="product-price">$19.99</p>
             </div>
           </div>
-          <div class="product-info">
-            <h3 class="product-title">Hell Yeah Brother</h3>
-            <p class="product-price">$24.99</p>
-          </div>
-        </div>
-  
-        <!-- Product Item 3 -->
-        <div class="product-item">
-          <div class="product-image">
-            <!-- Default image -->
-            <img src="images/kingdom-1.jpg" alt="Product 3" class="product-img default-img" />
-            <!-- Hover image -->
-            <img src="images/kingdom-2.jpg" alt="Product 3 Hover" class="product-img hover-img" />
-  
-            <div class="like-icon">
-              <img src="images/like-it.png" alt="Like" class="heart-icon" onclick="toggleLike(this)">
-            </div>
-            <div class="cart-icon">
-              <img src="images/shopping-bag-empty.png" alt="Add to Cart" class="cart-img" onclick="toggleCart(this)">
-            </div>
-          </div>
-          <div class="product-info">
-            <h3 class="product-title">Kingdom of Glory</h3>
-            <p class="product-price">$49.99</p>
-          </div>
-        </div>
-  
-        <!-- Product Item 4 -->
-        <div class="product-item">
-          <div class="product-image">
-            <!-- Default image -->
-            <img src="images/mock-1.jpg" alt="Product 4" class="product-img default-img" />
-            <!-- Hover image -->
-            <img src="images/mock-2.jpg" alt="Product 4 Hover" class="product-img hover-img" />
-  
-            <div class="like-icon">
-              <img src="images/like-it.png" alt="Like" class="heart-icon" onclick="toggleLike(this)">
-            </div>
-            <div class="cart-icon">
-              <img src="images/shopping-bag-empty.png" alt="Add to Cart" class="cart-img" onclick="toggleCart(this)">
-            </div>
-          </div>
-          <div class="product-info">
-            <h3 class="product-title">Mock Four</h3>
-            <p class="product-price">$34.99</p>
-          </div>
-        </div>
-  
-        <!-- Product Item 5 -->
-        <div class="product-item">
-          <div class="product-image">
-            <!-- Default image -->
-            <img src="images/mock-1.jpg" alt="Product 5" class="product-img default-img" />
-            <!-- Hover image -->
-            <img src="images/mock-2.jpg" alt="Product 5 Hover" class="product-img hover-img" />
-  
-            <div class="like-icon">
-              <img src="images/like-it.png" alt="Like" class="heart-icon" onclick="toggleLike(this)">
-            </div>
-            <div class="cart-icon">
-              <img src="images/shopping-bag-empty.png" alt="Add to Cart" class="cart-img" onclick="toggleCart(this)">
-            </div>
-          </div>
-          <div class="product-info">
-            <h3 class="product-title">Mock Five</h3>
-            <p class="product-price">$39.99</p>
-          </div>
-        </div>
+          
   
       </div>
     </section>
 
+    <!-- Collections Section -->
+    <div class="view-collections">
+         <img src="images/collections-img.png" alt="View Collections" class="collections-img">
+         <a href="shop.html" class="view-collections-button">View Collections</a>
+     </div>
   
     <!-- Customs Section -->
     <div class="view-customs">
@@ -212,8 +163,8 @@
         <a href="customs.html" class="view-customs-button">Something clever about customs</a>
     </div>
 
-     <!-- Carousel Section -->
-     <div class="carousel-container">
+    <!-- Carousel Section -->
+    <div class="carousel-container">
         <!-- Static Image -->
         <img src="images/img-car-static.png" alt="Static Arches" class="static-image">
     
@@ -235,6 +186,7 @@
             <img src="images/img-car-5.png" alt="Carousel Image 5" class="carousel-img">
         </div>
     </div>
+    
   
    
       
@@ -313,8 +265,8 @@
     }
   </script>
 
-<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="YzUzOGFjNmUtMzU4Ny00NzlkLWFhMzQtNDQ1ZDJjN2Q0MjBhNjM4NjM5NTc1MzQyNTY2ODAx"></script>
-<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.css" />
+<div hidden id="snipcart" data-api-key="YzUzOGFjNmUtMzU4Ny00NzlkLWFhMzQtNDQ1ZDJjN2Q0MjBhNjM4NjM5NTc1MzQyNTY2ODAx"></div>
+
 
 </body>
 </html>

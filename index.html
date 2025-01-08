@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- Add Font Awesome CDN for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+
     <!-- SEO Meta Tags -->
     <meta name="description" content="Gilded Graphics - Custom Apparel, Stickers & More!">
     <meta property="og:url" content="https://gildedthronco.com">
@@ -16,7 +16,14 @@
     <meta property="og:description" content="Discover unique designs at Gilded Graphics">
     <meta property="og:image" content="images/gg.favicon.png">
     <link rel="canonical" href="https://gildedthronco.com">
+
+    <!-- Snipcart -->
+    <!-- Snipcart JS and CSS -->
+    <link href="https://cdn.snipcart.com/themes/v3.0.0/default/snipcart.css" rel="stylesheet" />
+    <script src="https://cdn.snipcart.com/themes/v3.0.0/default/snipcart.js"></script>
+
   </head>
+
   
 <body>
 
@@ -101,111 +108,41 @@
     <!-- Product Block Section -->
     <section id="product-block">
       <div class="product-grid">
-  
-        <!-- Product Item 1 -->
-        <div class="product-item">
+
+          <!-- Product Item 1 test block -->
+          <div class="product-item">
             <div class="product-image">
               <!-- Default image -->
               <img src="images/mock-1.jpg" alt="Product 1" class="product-img default-img" />
               <!-- Hover image -->
               <img src="images/mock-2.jpg" alt="Product 1 Hover" class="product-img hover-img" />
-    
+          
+              <!-- Like Icon -->
               <div class="like-icon">
                 <img src="images/like-it.png" alt="Like" class="heart-icon" onclick="toggleLike(this)">
               </div>
+          
+              <!-- Cart Icon with Snipcart Integration -->
               <div class="cart-icon">
-                <img src="images/shopping-bag-empty.png" alt="Add to Cart" class="cart-img" onclick="toggleCart(this)">
+                <img 
+                  src="images/shopping-bag-empty.png" 
+                  alt="Add to Cart" 
+                  class="cart-img snipcart-add-item" 
+                  data-item-id="product-id-1"
+                  data-item-price="19.99"
+
+                  data-item-description="A comfortable cotton T-shirt"
+                  data-item-image="images/mock-1.jpg"
+                  data-item-name="Mock One"
+                  onclick="toggleCart(this)">
               </div>
             </div>
             <div class="product-info">
               <h3 class="product-title">Mock One</h3>
               <p class="product-price">$19.99</p>
             </div>
-        </div>
-  
-        <!-- Product Item 2 -->
-        <div class="product-item">
-          <div class="product-image">
-            <!-- Default image -->
-            <img src="images/hell-yeah-1.jpg" alt="Product 2" class="product-img default-img" />
-            <!-- Hover image -->
-            <img src="images/hell-yeah-2.jpg" alt="Product 2 Hover" class="product-img hover-img" />
-  
-            <div class="like-icon">
-              <img src="images/like-it.png" alt="Like" class="heart-icon" onclick="toggleLike(this)">
-            </div>
-            <div class="cart-icon">
-              <img src="images/shopping-bag-empty.png" alt="Add to Cart" class="cart-img" onclick="toggleCart(this)">
-            </div>
           </div>
-          <div class="product-info">
-            <h3 class="product-title">Hell Yeah Brother</h3>
-            <p class="product-price">$24.99</p>
-          </div>
-        </div>
-  
-        <!-- Product Item 3 -->
-        <div class="product-item">
-          <div class="product-image">
-            <!-- Default image -->
-            <img src="images/kingdom-1.jpg" alt="Product 3" class="product-img default-img" />
-            <!-- Hover image -->
-            <img src="images/kingdom-2.jpg" alt="Product 3 Hover" class="product-img hover-img" />
-  
-            <div class="like-icon">
-              <img src="images/like-it.png" alt="Like" class="heart-icon" onclick="toggleLike(this)">
-            </div>
-            <div class="cart-icon">
-              <img src="images/shopping-bag-empty.png" alt="Add to Cart" class="cart-img" onclick="toggleCart(this)">
-            </div>
-          </div>
-          <div class="product-info">
-            <h3 class="product-title">Kingdom of Glory</h3>
-            <p class="product-price">$49.99</p>
-          </div>
-        </div>
-  
-        <!-- Product Item 4 -->
-        <div class="product-item">
-          <div class="product-image">
-            <!-- Default image -->
-            <img src="images/mock-1.jpg" alt="Product 4" class="product-img default-img" />
-            <!-- Hover image -->
-            <img src="images/mock-2.jpg" alt="Product 4 Hover" class="product-img hover-img" />
-  
-            <div class="like-icon">
-              <img src="images/like-it.png" alt="Like" class="heart-icon" onclick="toggleLike(this)">
-            </div>
-            <div class="cart-icon">
-              <img src="images/shopping-bag-empty.png" alt="Add to Cart" class="cart-img" onclick="toggleCart(this)">
-            </div>
-          </div>
-          <div class="product-info">
-            <h3 class="product-title">Mock Four</h3>
-            <p class="product-price">$34.99</p>
-          </div>
-        </div>
-  
-        <!-- Product Item 5 -->
-        <div class="product-item">
-          <div class="product-image">
-            <!-- Default image -->
-            <img src="images/mock-1.jpg" alt="Product 5" class="product-img default-img" />
-            <!-- Hover image -->
-            <img src="images/mock-2.jpg" alt="Product 5 Hover" class="product-img hover-img" />
-  
-            <div class="like-icon">
-              <img src="images/like-it.png" alt="Like" class="heart-icon" onclick="toggleLike(this)">
-            </div>
-            <div class="cart-icon">
-              <img src="images/shopping-bag-empty.png" alt="Add to Cart" class="cart-img" onclick="toggleCart(this)">
-            </div>
-          </div>
-          <div class="product-info">
-            <h3 class="product-title">Mock Five</h3>
-            <p class="product-price">$39.99</p>
-          </div>
-        </div>
+          
   
       </div>
     </section>
@@ -299,8 +236,8 @@
     }
   </script>
 
-<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="YzUzOGFjNmUtMzU4Ny00NzlkLWFhMzQtNDQ1ZDJjN2Q0MjBhNjM4NjM5NTc1MzQyNTY2ODAx"></script>
-<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.css" />
+<div hidden id="snipcart" data-api-key="YzUzOGFjNmUtMzU4Ny00NzlkLWFhMzQtNDQ1ZDJjN2Q0MjBhNjM4NjM5NTc1MzQyNTY2ODAx"></div>
+
 
 </body>
 </html>
